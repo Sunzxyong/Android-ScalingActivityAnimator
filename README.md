@@ -5,12 +5,10 @@ An interesting pop-view Animation,This is a popWindow pop-up, activity shrink an
 ##Effect
 ![](http://img.my.csdn.net/uploads/201508/22/1440213866_6646.gif)
 
-![](https://github.com/Sunzxyong/Android-ScalingActivityAnimator/raw/master/sample/device-2015-08-21-194318.png)
-
 ---
 ##Uasge
 ###You can use this to display the default effect.
-You must pass the current activity layout id and the pop-view view id
+You must pass the current `activity layout id` and the `pop-view view id`
 ```java
   ScalingActivityAnimator mScalingActivityAnimator = new ScalingActivityAnimator(this, this, R.id.root_view, R.layout.pop_view);
   mScalingActivityAnimator.start();
@@ -28,7 +26,7 @@ If you want to get the pop-view child controls, so you can use
   });
   
 ```
-Exit Animation
+`Exit Animation`
 ```java
   mScalingActivityAnimator.resume();
 ```
@@ -37,7 +35,7 @@ Exit Animation
   mScalingActivityAnimator.setPopViewHeightIsTwoThirdOfScreen();
 ```
 ###Setting styles and adding animation xml file
-add animation xml file in anim directory,and setting styles
+Add animation xml file in anim directory,and setting styles
 ```xml
   <style name="showScalingAnimation" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/show_popup_in</item>

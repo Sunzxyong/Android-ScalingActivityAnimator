@@ -58,7 +58,7 @@ public class ScalingActivityAnimator {
         }
     }
     private void startAnim() {
-        int mainViewHeight = mMainView.getRootView().getHeight();//得到根视图View的高度
+        int mainViewHeight = mMainView.getRootView().getHeight();
         ObjectAnimator mainViewScaleXAnim = ObjectAnimator.ofFloat(mMainView, "scaleX", 1.0f, 0.8f);
         ObjectAnimator mainViewScaleYAnim = ObjectAnimator.ofFloat(mMainView, "scaleY", 1.0f, 0.9f);
         ObjectAnimator mainViewAlphaAnim = ObjectAnimator.ofFloat(mMainView, "alpha", 1.0f, 0.5f);
@@ -86,7 +86,7 @@ public class ScalingActivityAnimator {
         mPopupWindow.showAtLocation(mPopupView, Gravity.BOTTOM, 0, 0);
     }
     private void resumeAnim() {
-        int mainViewHeight = mMainView.getRootView().getHeight();//得到根视图View的高度
+        int mainViewHeight = mMainView.getRootView().getHeight();
         ObjectAnimator mainViewScaleXAnim = ObjectAnimator.ofFloat(mMainView, "scaleX", 0.8f, 1.0f);
         ObjectAnimator mainViewScaleYAnim = ObjectAnimator.ofFloat(mMainView, "scaleY", 0.9f, 1.0f);
         ObjectAnimator mainViewAlphaAnim = ObjectAnimator.ofFloat(mMainView, "alpha", 0.5f, 1.0f);
